@@ -40,7 +40,7 @@ select = [ 'I', 'F', 'E', 'W', 'PL', 'PT' ]
 
 [tool.taskipy.tasks]
 run = 'fastapi dev chat.py'
-test = 'pytest -s -x --cov=/chat.py -vv'
+test = 'pytest --cov=fast_chat -vv'
 lint = 'ruff check . && ruff check . --diff'
 format = 'ruff check . --fix && ruff format .'
 post_test = 'coverage html'
